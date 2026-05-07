@@ -1236,7 +1236,17 @@
                     <div class="success" id="successMsg"></div>
 
                     <div style="margin-top: 30px; padding-top: 30px; border-top: 1px solid #e0e0e0;">
-                        <p style="color: #999; font-size: 13px; margin-bottom: 15px;">Your response has been recorded and will be available in the Google Sheet linked to your account. You will also receive an email confirmation.</p>
+                        <div style="background: #f0f5ff; border-radius: 10px; padding: 25px; margin-bottom: 20px; text-align: left;">
+                            <h3 style="color: #1f4e78; font-size: 17px; margin-bottom: 10px;">📅 Book a Free Strategy Call</h3>
+                            <p style="color: #444; font-size: 14px; line-height: 1.7; margin-bottom: 16px;">
+                                Your results reveal clear opportunities. In a free 30-minute call, Nico Bakker (Njoy Marketing) will walk you through your score, identify your top priorities, and outline concrete next steps — no strings attached.
+                            </p>
+                            <a href="https://calendly.com/njoymarketing" target="_blank"
+                               style="display:inline-block; background:#1f4e78; color:white; padding:12px 24px; border-radius:6px; font-weight:600; font-size:14px; text-decoration:none;">
+                               Book your free call →
+                            </a>
+                        </div>
+                        <p style="color: #aaa; font-size: 12px; margin-bottom: 16px;">A summary of your results has been sent to your email address.</p>
                         <button class="btn-submit" onclick="resetForm()">Complete Another Scan</button>
                     </div>
                 </div>
@@ -1491,7 +1501,7 @@
                     loading.style.display = 'none';
                     resultsContent.style.display = 'block';
                     successMsg.style.display = 'block';
-                    successMsg.textContent = '✓ Your response has been saved successfully!';
+                    successMsg.textContent = '✓ Thank you! Check your inbox — your personalised results report is on its way.';
                 }, 1500);
 
             } catch (error) {
@@ -1500,7 +1510,7 @@
                     loading.style.display = 'none';
                     resultsContent.style.display = 'block';
                     errorMsg.style.display = 'block';
-                    errorMsg.textContent = 'Note: Data saved locally. If you want automatic Google Sheets integration, please contact support.';
+                    errorMsg.textContent = 'Something went wrong saving your data. Please email bakkeronline@hotmail.com with your results.';
                 }, 1500);
             }
         }
